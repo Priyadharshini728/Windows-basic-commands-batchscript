@@ -19,103 +19,54 @@ Execute the necessary commands/batch file for the desired output.
 
 
 
-
 # WINDOWS COMMANDS:
 ## Exercise 1: Basic Directory and File Operations
-Create a directory named "my-folder"
+Create a directory named "MyLab" on the desktop.
+
+## COMMAND AND OUTPUT
+Change to the "MyLab" directory and create an empty text file named "MyFile.txt" inside it.
+
+![383070830-f8f35e3e-256c-4e87-a4a3-d986a3a999a8](https://github.com/user-attachments/assets/24873fe5-ad30-4fb2-8bb4-f3a6b616fa96)
+
+
+## COMMAND AND OUTPUT
+List the contents of the "MyLab" directory.
+
+![383070688-7772ec41-df9c-413f-8bbd-2b8687553d13](https://github.com/user-attachments/assets/25d732df-a099-48fe-9ed2-b51758ba6db9)
+
+
+## COMMAND AND OUTPUT
+Copy "MyFile.txt" to a new folder named "Backup" on the desktop.
+
+![383070552-55532b80-746c-4b60-9b51-f85f58892dba](https://github.com/user-attachments/assets/03b93acf-3589-4ac8-8056-f4d5a71bfe0e)
+
+
+## COMMAND AND OUTPUT
+Move the "MyLab" directory to the "Documents" folder.
+
+![383070291-8510aa6b-0b31-4415-8a64-fef2e8fcb015](https://github.com/user-attachments/assets/52708057-68c1-42db-ab0d-a398e6d393be)
+
 
 ## COMMAND AND OUTPUT
 
-Remove the directory "my-folder"
-
-## COMMAND AND OUTPUT
+![383070413-346a1cd7-6dd2-4635-9018-bdc6a67c9a1e](https://github.com/user-attachments/assets/1ffc3c13-ad6e-4af0-b3a2-273fc9d50259)
 
 
-Create the file Rose.txt
-
-## COMMAND AND OUTPUT
-
-
-Create the file hello.txt using echo and redirection
-
-## COMMAND AND OUTPUT
-
-Copy the file hello.txt into the file hello1.txt
-
-## COMMAND AND OUTPUT
-
-Remove the file hello1.txt
-
-## COMMAND AND OUTPUT
-
-List out the file hello1.txt in the current directory
-
-## COMMAND AND OUTPUT
-
-List out all the associated file extensions 
-
-## COMMAND AND OUTPUT
-
-
-Compare the file hello.txt and rose.txt
-
-## COMMAND AND OUTPUT
 
 ## Exercise 2: Advanced Batch Scripting
-Create a batch file named on the desktop. The batch file need to have a variable assigned with a desired name for ex. name="John" and display as "Hello, John".
+Create a batch script named "BackupScript.bat" that creates a backup of files with the ".docx" extension from the "Documents" folder to a new folder named "DocBackup" on the desktop.
 
-
-
-
-
-## OUTPUT
-
-
-
-Create a batch file  on the desktop that checks whether a user-input number is odd or not. The script should:
-Prompt the user to enter a number.
-Calculate the remainder when the number is divided by 2.
-Display whether the number is odd or not.
-Ask the user if they want to check another number.
-Repeat the process if the user enters Y, and exit with a thank-you message if the user enters N.
-Handle invalid inputs for the continuation prompt (Y/N) gracefully.
-
-
+open a notepad file named BackupScript.bat and enter the following:
+```
+mkdir %userprofile%\Desktop\DocBackup
+copy %userprofile%\Documents\*.docx %userprofile%\Desktop\DocBackup
+del %userprofile%\Documents\DocBackup\*.docx
+echo Backup and deletion completed successfully!
+```
 
 ## OUTPUT
 
-
-
-
-Write a batch file that uses a FOR loop to iterate over a sequence of numbers (1 to 5) and displays each number with the label Number:. The output should pause at the end.
-
-
-
-
-## OUTPUT
-
-
-
-
-Write a batch script to check whether a file named sample.txt exists in the current directory. If the file exists, display the message sample.txt exists. Otherwise, display sample.txt does not exist. Pause the script at the end to view the result.
-
-Instructions:
-Use the IF EXIST conditional statement.
-Make sure the script works for files located in the same directory as the batch file.
-Use pause to keep the command window open after displaying the message.
-Expected Output (if the file exists):
-
-## OUTPUT
-
-
-Write a batch script that displays a simple menu with three options:
-Say Hello – Displays the message Hello, World!
-Create a File – Creates a file named newfile.txt with the content This is a new file
-Exit – Exits the script with a goodbye message
-The script should repeatedly display the menu until the user chooses to exit. Use goto statements to handle menu navigation.
-
-
-## OUTPUT
+![383071423-50e4ff0e-115a-4d0d-bf2d-bc6a853b1136](https://github.com/user-attachments/assets/4f361c50-d79c-44f0-9dd1-51566ed190d1)
 
 
 
